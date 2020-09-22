@@ -98,9 +98,6 @@ def compound_properties(CIDs):
 # Page Title
 ######################
 
-image = Image.open('chem1.png')
-
-st.image(image, use_column_width=True)
 
 st.write("""
 # Molecular Descriptors Web App
