@@ -103,6 +103,11 @@ st.write("""
 # Molecular Descriptors Web App
 This app calculate the **Molecular Descriptors** of compounds!\n
 Author: **Damian Nowak**
+Github repo: \n
+https://github.com/XDamianX-coder/Molecular_descriptors_app \n
+Molecular_descriptors_app contains a bunch of new features \n
+which can't be present in online version. \n
+Contact: dam.now22@protonmail.com
 """)
 
 my_bar = st.progress(0)
