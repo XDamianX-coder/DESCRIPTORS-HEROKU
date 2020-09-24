@@ -139,7 +139,7 @@ A
 
 
 
-CID_input = "258"
+CID_input = "45266826"
 CID = st.sidebar.text_area("CID input to get molecular formula.", CID_input)
 CID = CID.split('\n')
 
@@ -148,7 +148,7 @@ CID
 B = molecular_formula(CID)
 B
 
-CID_input_1 = "11786"
+CID_input_1 = "3007"
 CID_1 = st.sidebar.text_area("CID input to get IUPAC name.", CID_input_1)
 CID_1 = CID_1.split('\n')
 
@@ -157,7 +157,7 @@ CID_1
 C = iupac_name(CID_1)
 C
 
-Name_input = "Glucose"
+Name_input = "Metamphetamine"
 Name_1 = st.sidebar.text_area("Name input to CID number.", Name_input)
 Name_1 = Name_1.split('\n')
 
@@ -167,9 +167,9 @@ D = search_by_cpnd_name(Name_1)
 D
 
 
-CID_input_1 ="785,267"
+CID_input_1 ="3007, 134664, 76175, 2476, 7843, 107786, 2826, 1615, 702, 10413, 3592, 3821, 3981, 45266826, 4095, 1206, 2978"
 CIDs = st.sidebar.text_area("CIDs input to get compound properties.", CID_input_1)
-
+CIDs = CIDs.split(', ')
 st.header('Input CIDS to get compound properties.')
 CIDs
 E = compound_properties(CIDs)
@@ -178,13 +178,28 @@ E
 time.sleep(0.1)
 plot_1 = compound_properties(CIDs)
 fig, ax = plt.subplots()
-ax.hist(plot_1['exact_mass'], bins=50)
+ax.hist(plot_1['exact_mass'], bins=100)
 st.header('Distribution of exact mass.')
 st.pyplot(fig)
 
 time.sleep(0.1)
 plot_1 = compound_properties(CIDs)
 fig, ax = plt.subplots()
-ax.hist(plot_1['tpsa'], bins=50)
+ax.hist(plot_1['tpsa'], bins=100)
 st.header('Distribution of tpsa.')
+st.pyplot(fig)
+
+
+time.sleep(0.1)
+plot_1 = compound_properties(CIDs)
+fig, ax = plt.subplots()
+ax.hist(plot_1['complexity'], bins=100)
+st.header('Distribution of complexity.')
+st.pyplot(fig)
+
+time.sleep(0.1)
+plot_1 = compound_properties(CIDs)
+fig, ax = plt.subplots()
+ax.hist(plot_1['heavy_atom_count'], bins=100)
+st.header('Distribution of number of heavy atoms.')
 st.pyplot(fig)
