@@ -107,7 +107,12 @@ Github repo: \n
 https://github.com/XDamianX-coder/Molecular_descriptors_app \n
 Molecular_descriptors_app contains a bunch of new features \n
 which can't be present in online version. \n
-Contact: dam.now22@protonmail.com
+Contact: dam.now22@protonmail.com \n
+You can also check my other applications.\n
+The random number generator in given range.\n
+https://github.com/XDamianX-coder/Random_numbers \n
+Calculation of the surface areas of figures and volume of solids. \n
+https://github.com/XDamianX-coder/Math_areas_and_volumes
 """)
 
 my_bar = st.progress(0)
