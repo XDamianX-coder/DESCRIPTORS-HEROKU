@@ -102,7 +102,7 @@ def compound_properties(CIDs):
 st.write("""
 # Molecular Descriptors Web App
 This app calculate the **Molecular Descriptors** of compounds!\n
-Author: **Damian Nowak**
+Author: **Damian Nowak**\n
 Github repo: \n
 https://github.com/XDamianX-coder/Molecular_descriptors_app \n
 Molecular_descriptors_app contains a bunch of new features \n
